@@ -327,6 +327,11 @@ a.current {
   transition: all 0.6s ease;
 }
 
+.aboutimage img{
+  max-width: 550px;
+  max-height: 400px;
+}
+
 .fade {
   /* source: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
   opacity: 0.5;
@@ -350,11 +355,11 @@ a.current {
   flex-wrap: nowrap;
   overflow-x: auto; */
   display: grid;
-  grid-gap: 16px;
-  padding: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(auto, 385px));
+  grid-gap: 15px;
+  padding: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 355px));
   grid-auto-flow: column;
-  grid-auto-columns: minmax(auto, 385px);
+  grid-auto-columns: minmax(auto, 355px);
   overflow-x: auto;
 }
 
@@ -369,7 +374,7 @@ a.current {
 .menuscroll div {
   /* flex: 0 0 auto;
   padding: 10px;  */
-  width: 385px;
+  width: 350px;
   animation: animate 8s linear infinite;
 }
 
@@ -377,6 +382,10 @@ a.current {
   transition: all 0.3s ease;
 }
 
+.menuItem img{
+  width: 350px;
+  height: 380px;
+}
 .shrink:hover {
   /* source: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
   -webkit-transform: scale(0.85);
