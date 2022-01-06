@@ -1,0 +1,592 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  min-height: 100%;
+  font-family: montserrat, sans-serif;
+  background-color: whitesmoke;
+  /*background-color: #F7EBE8;*/
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* styling start here */
+
+/*  * means it will apply for all the elements in the HTML file */
+* {
+  box-sizing: border-box;
+}
+
+.navbackground {
+  background-color: black;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+h1 {
+  color: #fff1e6;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: black;
+  color: #fae6db;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*set wrapper as a container and make even space to left and right*/
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/*hr{
+    margin-bottom: 0px;
+}*/
+
+/* starting the navigation bar*/
+
+/*  Use combination of 2 typeface
+    h use font-family: 'Playfair Display', serif;
+    body, navigation and the rest use font-family: 'Montserrat', sans-serif;*/
+
+#navDropDown a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 600px;
+  min-width: 400px; 
+  height: 200px;
+  margin-top: -75px;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display {
+  display: none;
+}
+
+/*specific style for the dropdown menu*/
+#navDropDown {
+  margin-top: 45px;
+  position: absolute;
+  min-width: 100%;
+  width: 375px;
+}
+
+#navDropDown li {
+  display: block;
+}
+
+#navDropDown .navlink li {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: rgba(248, 243, 238, 0.9);
+  text-align: center;
+}
+
+#navDropDown .navlink li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.display {
+  display: none;
+}
+
+.pushDown {
+  margin-top: 230px;
+}
+
+/*make the hamburger menu in the middle of the logo*/
+.nav {
+  height: 120px;
+  padding-top: 30px;
+}
+
+.menu svg {
+  position: absolute;
+  top: 15%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin: 0px;
+}
+
+a,
+a:link {
+  text-decoration: none;
+  color: #949598;
+}
+
+a:hover,
+a:focus {
+  display: block;
+  text-decoration: none;
+  color: #1e555c;
+}
+
+a.current {
+  display: block;
+  text-decoration: none;
+  color: #f15152;
+}
+
+/* main content styling */
+
+.section-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+}
+
+#openingtext p,
+.contacttext {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#aboutsection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.aboutimage {
+  width: 580px;
+  padding: 10px;
+  transition: all 0.6s ease;
+}
+
+.fade {
+  /* source: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+  opacity: 0.5;
+}
+.fade:hover {
+  opacity: 1;
+}
+.abouttext {
+  width: 560px;
+  justify-content: left;
+  padding: 10px;
+}
+
+#menusection,
+#contactsection {
+  background-color: #fff1e6;
+}
+
+.menuscroll {
+  /* display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; */
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 385px));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(auto, 385px);
+  overflow-x: auto;
+}
+
+/* .menuscroll:hover {
+  animation-play-state: paused;
+} */
+
+.menuscroll::-webkit-scrollbar {
+  display: none;
+}
+
+.menuscroll div {
+  /* flex: 0 0 auto;
+  padding: 10px;  */
+  width: 385px;
+  animation: animate 8s linear infinite;
+}
+
+.menuItem {
+  transition: all 0.3s ease;
+}
+
+.shrink:hover {
+  /* source: https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+@keyframes animate {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* @keyframes animate {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-395px, 0);
+  }
+} */
+
+/* .transition {
+  animation: animate 8s linear infinite;
+} */
+
+#imagemenusection h3 {
+  font-family: "Playfair Display", serif;
+  color: #848588e3;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px auto;
+}
+#imagemenusection p {
+  margin-bottom: 30px;
+}
+#insightsection {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 270px));
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insightimage {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-grid;
+}
+
+.insightimage img {
+  width: 150px;
+  height: 150px;
+  border: 8px solid black;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insightimage img.hoverimg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  /* adding animation to insight images */
+  /* source: http://css3.bradshawenterprises.com/cfimg/#cfimg1 */
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+}
+
+.insightimage:hover img.hoverimg {
+  opacity: 1;
+}
+
+.insighttext {
+  text-align: center;
+  font-size: 13px;
+  clear: both;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#contactsection {
+  margin-bottom: 0px;
+}
+.contactitem {
+  width: 270px;
+  padding: 10px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 15px auto; */
+  display: inline-grid;
+  text-align: center;
+}
+h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.contactitem p {
+  margin-top: 13px;
+  font-size: 15px;
+}
+/*-----------------------------------------------
+Tablet Style
+--------------------------*/
+@media only screen and (min-width: 768px) {
+  .navbackground {
+    background-color: black;
+    padding-top: 35px;
+    /* padding-bottom: 35px; */
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .pushDown {
+    margin-top: 220px;
+  }
+
+  footer {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/*-----------------------------------------------
+Desktop Style
+--------------------------*/
+@media only screen and (min-width: 992px) {
+  header {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .navbackground {
+    background-color: lightgray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .pushDown {
+    margin-top: 70px;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  p {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /*specific style for the dropdown menu*/
+  #navDropDown {
+    /*display: none;*/
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 25px;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+  }
+
+  #navDropDown .navlink li {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: rgba(248, 237, 226, 0.9);
+    text-align: center;
+    width: 25%;
+    float: left;
+    line-height: 23px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  footer {
+    /*background-color: #008280;*/
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
